@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Quiz</h1>
+        <form id="quizForm">
+            <label>1. What does HTML stand for?</label>
+            <input type="radio" name="q1" value="1"> Hyper Text Markup Language<br>
+            <input type="radio" name="q1" value="0"> Home Tool Markup Language<br>
+
+            <label>2. Which tag is used for a hyperlink?</label>
+            <input type="radio" name="q2" value="1"> &lt;a&gt;<br>
+            <input type="radio" name="q2" value="0"> &lt;link&gt;<br>
+
+            <label>3. How do you apply CSS?</label>
+            <input type="radio" name="q3" value="1"> Inline, Internal, External<br>
+            <input type="radio" name="q3" value="0"> Only Inline<br>
+
+            <button type="button" onclick="checkQuiz()">Submit</button>
+        </form>
+        <p id="result"></p>
+        <a href="index.html">Back to Homepage</a>
+    </div>
+
+    <script>
+        function checkQuiz() {
+            let score = 0;
+            const form = document.forms['quizForm'];
+            if(form.q1.value === "1") score++;
+            if(form.q2.value === "1") score++;
+            if(form.q3.value === "1") score++;
+            document.getElementById('result').innerText = "Your score: " + score + "/3";
+        }
+    </script>
+</body>
+</html>

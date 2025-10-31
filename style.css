@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #007BFF;
+}
+
+a {
+    display: block;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-left: 5px solid #007BFF;
+    border-radius: 5px;
+    overflow-x: auto;
+}
